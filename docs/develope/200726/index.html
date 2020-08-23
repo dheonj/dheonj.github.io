@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="오 생각보다 간단하게 설치완료. 오류도 없이 설치해버렸으요.
+내 컴터는 lg 그램 15Z990-HA7BK에 윈도우10 설치되어있었고,"><meta property="og:title" content="LG그램에 리눅스 20.04 설치하기" />
+<meta property="og:description" content="오 생각보다 간단하게 설치완료. 오류도 없이 설치해버렸으요.
+내 컴터는 lg 그램 15Z990-HA7BK에 윈도우10 설치되어있었고," />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dheonj.github.io/docs/develope/200726/" />
+<meta property="article:published_time" content="2020-07-26T18:28:08+09:00" />
+<meta property="article:modified_time" content="2020-07-26T18:28:08+09:00" />
+<title>LG그램에 리눅스 20.04 설치하기 | multi-dimentional</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
+<script defer src="/en.search.min.ae1c6a8f67d0dad9205b1d9541ff0a6e83c5a97edd3ec96054f25070a4fd35d5.js" integrity="sha256-rhxqj2fQ2tkgWx2VQf8KboPFqX7dPslgVPJQcKT9NdU="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168756004-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/logo.jpg" alt="Logo" /><span>multi-dimentional</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/profile/" class="">소개 Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/" class="collapsed ">개발 기록 Developer Note</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200814/" class="">구글 app script 에서 installable trigger 활성화하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200812/" class="">구글 스프레드 시트 &#43; app script 이용해서 독서 리스트 관리하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200726/" class="active">LG그램에 리눅스 20.04 설치하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200723_b/" class="">인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200723/" class="">hugo 명령어 정리, git 배쉬에서 .md파일 바로 실행하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200618/" class="">추천 시스템 만들기 building a recommendation system 0</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200604/" class="">google cloud function을 이용한 크롤러 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200525/" class="">google cloud function을 이용한 크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200505/" class="">파이썬 &#43; requests &#43; beautifulsoup 를 구글 클라우드 펑션에 구현하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/gcf1/" class="">구글 클라우드 펑션</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/insertimg/" class="">Insertimg</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/hugo-blog/" class="">휴고 블로그 구축과정</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/yuppppp/" class="">Fiiinally</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/blogframework/" class="">블로그 프레임웤 정함</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="">xpath 사용해서 엘리먼트 찾기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/" class="">마이프로틴 웹크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/aint-easy/" class="">aint easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/building-a-web-crawler/" class="">building a web crawler</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/finally/" class="">can a github blog substitute a paper note?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/haha/" class="">haha</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/book/" class="collapsed ">독후감 Book Review</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/paper/" class="collapsed ">아무논문 Paper Review</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>LG그램에 리눅스 20.04 설치하기</strong>
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+    <h2>LG그램에 리눅스 20.04 설치하기</h2>
+    <h4 style="float:inline-end">Sunday, 07/26/2020, 06:28PM</h4>
+    <hr style="border: solid 1px #848484"><p>오 생각보다 간단하게 설치완료. 오류도 없이 설치해버렸으요.</p>
+<p>내 컴터는 lg 그램 15Z990-HA7BK에 윈도우10 설치되어있었고,</p>
+<p>ssd는 256, 512 두개 사용중. C드라이브 (256)에 윈도우 설치. 나는 D드라이브(512)에 우분투 설치 완료.</p>
+<p><strong>설치 USB 준비</strong></p>
+<ol>
+<li>USB 포맷 (FAT32)</li>
+<li>우분투 설치파일 (.iso) 다운로드 (오늘 날짜 기준 ubuntu-20.04-desktop-amd64.iso)</li>
+<li>다운받은 iso파일을 etcher나 뭐 이런거 사용하지 않고 그냥 우클릭해서 usb에 압축해제</li>
+</ol>
+<p><strong>컴터 준비</strong></p>
+<ol>
+<li>D 드라이브 포맷</li>
+</ol>
+<p><strong>설치 과정</strong></p>
+<ol>
+<li>재부팅 후 F2 연타</li>
+<li>bios로 들어가서 secure boot &ndash;&gt; false로 설정</li>
+<li>부팅 priority usb로 설정</li>
+<li>usb 꼽고 재부팅하면,, 설치진행할 수 있음</li>
+<li>파티션 나누는 부분에서 잠시 흠칫했는데, 이 블로그 보고 <a href="https://lsjsj92.tistory.com/375?category=759963">https://lsjsj92.tistory.com/375?category=759963</a> 바로 해결했다.
+<ul>
+<li>SSD 두개일 경우 하나는 /dev/sda, 다른 하나는 /dev/sdb 이렇게 인식이 되는데 나의 경우에는 첫번째 ssd에 윈도우 설치되어있는 상태. 두번째 ssd에 우분투 설치할거니 /dev/sdb의 파티션을 나눠주면 된다. 부트로더 설치할 장치도 /dev/sdb를 선택하면 됨.</li>
+<li>/dev/sdb를 선택하고 swab(/swap) 영역이랑 home(/home), root (/)이렇게 각각 파티션 설정해주고 설치 진행하면 된다</li>
+</ul>
+</li>
+<li>끝. 쏘 이지,,</li>
+</ol>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>crawler on multi-dimentional</title>
+    <link>https://dheonj.github.io/tags/crawler/</link>
+    <description>Recent content in crawler on multi-dimentional</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 22 Mar 2020 22:19:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://dheonj.github.io/tags/crawler/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>aint easy</title>
+      <link>https://dheonj.github.io/docs/develope/aint-easy/</link>
+      <pubDate>Sun, 22 Mar 2020 22:19:36 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/aint-easy/</guid>
+      <description>building an web crawler to gather nutritional information of every products on myprotein</description>
+    </item>
+    
+  </channel>
+</rss>
