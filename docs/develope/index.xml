@@ -10,6 +10,16 @@
     
     
     <item>
+      <title>hugo 블로그 구축할때 레포가 2개 필요한 이유</title>
+      <link>https://dheonj.github.io/docs/develope/200823/</link>
+      <pubDate>Sun, 23 Aug 2020 16:19:41 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200823/</guid>
+      <description>휴고 블로그 구축할때 깃헙 레포가 2개 필요하다.
+하나는 블로그의 모든 소스가 들어가있는 폴더고 (hugo/blog)</description>
+    </item>
+    
+    <item>
       <title>구글 app script 에서 installable trigger 활성화하기</title>
       <link>https://dheonj.github.io/docs/develope/200814/</link>
       <pubDate>Fri, 14 Aug 2020 00:31:34 +0900</pubDate>
