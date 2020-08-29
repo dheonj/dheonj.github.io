@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림. 엘리먼트가 로드되면 esc 누름."><meta property="og:title" content="xpath 사용해서 엘리먼트 찾기" />
-<meta property="og:description" content="xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림. 엘리먼트가 로드되면 esc 누름." />
+<meta name="description" content="깃헙 블로그에 막 신나게 글을 썼는데 검색에 노출이 안되면 은근히 섭섭하다."><meta property="og:title" content="hugo 블로그 구글 서치 콘솔 등록" />
+<meta property="og:description" content="깃헙 블로그에 막 신나게 글을 썼는데 검색에 노출이 안되면 은근히 섭섭하다." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dheonj.github.io/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" />
-<meta property="article:published_time" content="2020-03-31T23:38:45+00:00" />
-<meta property="article:modified_time" content="2020-03-31T23:38:45+00:00" />
-<title>xpath 사용해서 엘리먼트 찾기 | multi-dimentional</title>
+<meta property="og:url" content="https://dheonj.github.io/docs/develope/200824/" />
+<meta property="article:published_time" content="2020-08-24T22:44:48+09:00" />
+<meta property="article:modified_time" content="2020-08-24T22:44:48+09:00" />
+<title>hugo 블로그 구글 서치 콘솔 등록 | multi-dimentional</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
 <script defer src="/en.search.min.e63c95178f38621bee4cff1a265cf75e40d95c862dd6b7aef6788459c731058e.js" integrity="sha256-5jyVF484YhvuTP8aJlz3XkDZXIYt1reu9niEWccxBY4="></script>
@@ -104,7 +104,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/develope/200824/" class="">hugo 블로그 구글 서치 콘솔 등록</a>
+    <a href="/docs/develope/200824/" class="active">hugo 블로그 구글 서치 콘솔 등록</a>
   
 
         </li>
@@ -264,7 +264,7 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="active">xpath 사용해서 엘리먼트 찾기</a>
+    <a href="/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="">xpath 사용해서 엘리먼트 찾기</a>
   
 
         </li>
@@ -408,7 +408,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>xpath 사용해서 엘리먼트 찾기</strong>
+  <strong>hugo 블로그 구글 서치 콘솔 등록</strong>
   <label for="toc-control">
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
   </label>
@@ -428,37 +428,38 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown">
-    <h2>xpath 사용해서 엘리먼트 찾기</h2>
-    <h4 style="float:inline-end">Tuesday, 03/31/2020, 11:38PM</h4>
-    <hr style="border: solid 1px #848484"><ol>
-<li>xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림.
-엘리먼트가 로드되면 esc 누름. 외국서버에 있는 홈페이진데 굳이 모든 요소가 로딩될때까지 기다릴 필요는 없으니 ㅇㅇ</li>
+    <h2>hugo 블로그 구글 서치 콘솔 등록</h2>
+    <h4 style="float:inline-end">Monday, 08/24/2020, 10:44PM</h4>
+    <hr style="border: solid 1px #848484"><p>깃헙 블로그에 막 신나게 글을 썼는데 검색에 노출이 안되면 은근히 섭섭하다.</p>
+<p>뭐,, 그런것보다도 정보를 공유하려고 하는 짓들이니 구글검색에 나오도록 해야함.</p>
+<p><a href="https://hahafamilia.github.io/howto/hugo-staticgen/">https://hahafamilia.github.io/howto/hugo-staticgen/</a> 이분 글을 참조 해서 했다 ㅇㅇㅇ 짧게 정리하면</p>
+<ol>
+<li>
+<p>블로그가 검색 노출이 되도록 설정</p>
+<pre><code># config.toml 파일에 아래 내용 추가
+enableRobotsTXT = true
+   
+[outputs]
+home = [&quot;HTML&quot;, &quot;RSS&quot;, &quot;JSON&quot;]
+   
+[sitemap]
+changefreq = &quot;weekly&quot;
+filename = &quot;sitemap.xml&quot;
+</code></pre></li>
+<li>
+<p><a href="https://search.google.com/">https://search.google.com/</a> 에 블로그 주소 등록</p>
+</li>
 </ol>
-<pre><code>WebDriverWait(driver, 5).until(
-EC.presence_of_element_located((By.XPATH , &quot;&quot;&quot; // *[@id=&quot;mainContent&quot;]/div/div[1]/main/div[1]/div[1]/p &quot;&quot;&quot;))
-)
-ActionChains(driver).send_keys(Keys.ESCAPE).perform()
-</code></pre><ol start="2">
-<li>지정한 위치(xpath)에 있는 요소를 찾음. 그리고 걔를 num_of_results라는 변수로 저장.</li>
+<p>여기에서 add property하면 끝나는게 아니라,,, (오늘알았음 )</p>
+<p>sitemap을 등록해야 함. 구글 크롤링하는 봇한테 안녕 우리집에는 이런것들이 있는데 소문좀 내줘 하고 알려주는 역할,,</p>
+<ol start="3">
+<li>위에서 설정한 사이트맵 등록</li>
 </ol>
-<pre><code>num_of_results= driver.find_element_by_xpath(&quot;&quot;&quot; //*[@id=&quot;mainContent&quot;]/div/div[1]/main/div[1]/div[1]/p &quot;&quot;&quot;)
-</code></pre><ol start="3">
-<li>2번과 같이 xpath로 엘리먼트를 찾아서 info라고 정의.</li>
-</ol>
-<pre><code>info = driver.find_element_by_xpath(&quot;&quot;&quot;//*[@id=&quot;product-description-content-8&quot;]/div/div&quot;&quot;&quot;)
-</code></pre><ol start="4">
-<li>info라는 엘리먼트 내부(.)에서 p태그를 가진 요소'들'을 모두 찾음(//p). elements이기 때문에 serving_info는 리스트임. ㅇㅇ.</li>
-</ol>
-<pre><code>serving_info=info.find_elements_by_xpath(&quot;.//p&quot;)
-</code></pre><ol start="5">
-<li>info라는 엘리먼트 내부의 테이블을 모두 찾는데(.//table) 그 테이블이 td의 child일 경우에는 제외([not(ancestor::td)])</li>
-</ol>
-<pre><code>nutritional_info=info.find_elements_by_xpath(&quot;&quot;&quot;.//table[not(ancestor::td)]&quot;&quot;&quot;)
-</code></pre><ol start="6">
-<li>table이라는 엘리먼트 내부의 td태그를 가진 요소들을 모두 찾는데, 그 td가 table을 child로 가지는 경우에는 제외 ([not(child::table)])</li>
-</ol>
-<pre><code>nut_info_text = table.find_elements_by_xpath(&quot;&quot;&quot;.//td[not(child::table)]&quot;&quot;&quot;)
-</code></pre></article>
+<p><a href="https://search.google.com/">https://search.google.com/</a> 여기서 위에서 등록한 주소 선택 후 왼쪽 탭 Index &gt; Sitemaps 에</p>
+<p>blogAddress/sitemap.xml</p>
+<p>blogAddress/index.xml (이게 rss인듯. 휴고는 기본적으로 만들어주나보다 짱짱)</p>
+<p>두개를 추가하면 된다</p>
+</article>
  
       
 

@@ -28,7 +28,13 @@
   
   <url>
     <loc>https://dheonj.github.io/docs/</loc>
-    <lastmod>2020-08-24T22:04:26+09:00</lastmod>
+    <lastmod>2020-08-24T22:44:48+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  
+  <url>
+    <loc>https://dheonj.github.io/docs/develope/200824/</loc>
+    <lastmod>2020-08-24T22:44:48+09:00</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   
