@@ -10,6 +10,17 @@
     
     
     <item>
+      <title>Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</title>
+      <link>https://dheonj.github.io/docs/develope/200907_google_apps_script_project_booklist/</link>
+      <pubDate>Mon, 07 Sep 2020 01:32:38 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200907_google_apps_script_project_booklist/</guid>
+      <description>https://dheonj.github.io/docs/develope/200812/
+여기에서 대충 얘기한 독서리스트 얘기 이어서..
+구글 스프레드시트로 만든 독서 리스트 관리 프로그램 lite 버전.</description>
+    </item>
+    
+    <item>
       <title>hugo 블로그 구글 서치 콘솔 등록</title>
       <link>https://dheonj.github.io/docs/develope/200824/</link>
       <pubDate>Mon, 24 Aug 2020 22:44:48 +0900</pubDate>
