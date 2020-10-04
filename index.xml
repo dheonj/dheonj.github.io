@@ -19,6 +19,15 @@
     </item>
     
     <item>
+      <title>The Role of Deliberate Practice in the Acquisition of Expert Performance</title>
+      <link>https://dheonj.github.io/docs/paper/201004/</link>
+      <pubDate>Sun, 04 Oct 2020 20:39:08 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/paper/201004/</guid>
+      <description>The Role of Deliberate Practice in the Acquisition of Expert Performance</description>
+    </item>
+    
+    <item>
       <title>Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</title>
       <link>https://dheonj.github.io/docs/develope/200907_google_apps_script_project_booklist/</link>
       <pubDate>Mon, 07 Sep 2020 01:32:38 +0900</pubDate>
@@ -106,8 +115,8 @@
       
       <guid>https://dheonj.github.io/docs/develope/200723_b/</guid>
       <description>이것도 맨날 헷갈리는 개념
-출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
-인코딩: 문자열을 바이트로 변환</description>
+출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
+인코딩: 문자열을 바이트로 변환   바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐</description>
     </item>
     
     <item>

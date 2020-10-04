@@ -76,8 +76,8 @@
       
       <guid>https://dheonj.github.io/docs/develope/200723_b/</guid>
       <description>이것도 맨날 헷갈리는 개념
-출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
-인코딩: 문자열을 바이트로 변환</description>
+출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
+인코딩: 문자열을 바이트로 변환   바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐</description>
     </item>
     
     <item>
