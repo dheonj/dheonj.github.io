@@ -19,6 +19,16 @@
     </item>
     
     <item>
+      <title>도서 검색 api - 네이버, kakao (&#43;파이썬에서 xml 파싱)</title>
+      <link>https://dheonj.github.io/docs/develope/210101/</link>
+      <pubDate>Fri, 01 Jan 2021 23:11:51 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/210101/</guid>
+      <description>네이버, 카카오 둘 다 도서 검색 api를 제공한다.
+isbn 값을 넣어주면, 책에대한 정보를 서버에 요청하고 받아오는 코드를 작성함.</description>
+    </item>
+    
+    <item>
       <title>The Role of Deliberate Practice in the Acquisition of Expert Performance</title>
       <link>https://dheonj.github.io/docs/paper/201004/</link>
       <pubDate>Sun, 04 Oct 2020 20:39:08 +0900</pubDate>
@@ -104,8 +114,8 @@
       <pubDate>Sun, 26 Jul 2020 18:28:08 +0900</pubDate>
       
       <guid>https://dheonj.github.io/docs/develope/200726/</guid>
-      <description>오 생각보다 간단하게 설치완료. 오류도 없이 설치해버렸으요.
-내 컴터는 lg 그램 15Z990-HA7BK에 윈도우10 설치되어있었고,</description>
+      <description>2021.1.2 업뎃
+다 필요없고 WSL2 (Windows Subsystem for Linux 2) 설치 후 그 환경에서 ROS 깔고 이용하는게 최고!</description>
     </item>
     
     <item>
