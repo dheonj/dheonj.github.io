@@ -1,36 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
+  <meta name="generator" content="Hugo 0.81.0" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="이것도 맨날 헷갈리는 개념
-출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
-인코딩: 문자열을 바이트로 변환   바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐"><meta property="og:title" content="인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기" />
+출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
+인코딩: 문자열을 바이트로 변환#  바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐
+  파이썬은 문자열을 유니코드로 처리 ㅇㅇ
+  즉 파이썬에서 인코딩이란, 유니코드 &ndash;&gt; utf-8, euc-kr, ascii#디코딩은 그 반대: 바이트를 문자열로 변환#utf-8, euc-kr, ascii &ndash;&gt; 유니코드#인스타그램 oembed가 리턴해주는건 json데이터인데, 이걸 모르고
+받아온 바이트데이터를 utf-8로 인코딩 euc로 인코딩해보고 인코딩한거에서 \\u0000 없애보고 난리부르스를,,,">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기" />
 <meta property="og:description" content="이것도 맨날 헷갈리는 개념
-출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
-인코딩: 문자열을 바이트로 변환   바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐" />
+출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
+인코딩: 문자열을 바이트로 변환#  바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐
+  파이썬은 문자열을 유니코드로 처리 ㅇㅇ
+  즉 파이썬에서 인코딩이란, 유니코드 &ndash;&gt; utf-8, euc-kr, ascii#디코딩은 그 반대: 바이트를 문자열로 변환#utf-8, euc-kr, ascii &ndash;&gt; 유니코드#인스타그램 oembed가 리턴해주는건 json데이터인데, 이걸 모르고
+받아온 바이트데이터를 utf-8로 인코딩 euc로 인코딩해보고 인코딩한거에서 \\u0000 없애보고 난리부르스를,,," />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://dheonj.github.io/docs/develope/200723_b/" />
-<meta property="article:published_time" content="2020-07-23T21:27:59+09:00" />
-<meta property="article:modified_time" content="2020-10-05T00:43:50+09:00" />
-<title>인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기 | multi-dimentional</title>
+<meta property="og:url" content="http://example.org/docs/develope/200723_b/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-07-23T21:27:59&#43;09:00" />
+<meta property="article:modified_time" content="2020-07-23T21:27:59&#43;09:00" />
+
+<title>인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기 | My New Hugo Site</title>
+<link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
-<script defer src="/en.search.min.c198313ce390e23b96fe692d667028b24c323a05632fdd1a08a985c744fda375.js" integrity="sha256-wZgxPOOQ4juW/mktZnAoskwyOgVjL90aCKmFx0T9o3U="></script>
-
-<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
-
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-168756004-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
+<link rel="stylesheet" href="/book.min.2bc2364a4a4b31f0ec1debecf0a8f90a840821f143dfe1ac6a0f7cbcbdcf64ac.css" integrity="sha256-K8I2SkpLMfDsHevs8Kj5CoQIIfFD3&#43;Gsag98vL3PZKw=">
+<script defer src="/en.search.min.a7849a4f41464b04710ba26754453cd03bd3adf39e2f5e41e08e1528bd6cbe11.js" integrity="sha256-p4SaT0FGSwRxC6JnVEU80DvTrfOeL15B4I4VKL1svhE="></script>
 <!--
 Made with Book Theme
 https://github.com/alex-shpak/hugo-book
@@ -39,21 +36,23 @@ https://github.com/alex-shpak/hugo-book
   
 </head>
 
-<body>
-  <input type="checkbox" class="hidden" id="menu-control" />
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
   <main class="container flex">
     <aside class="book-menu">
-      
+      <div class="book-menu-content">
+        
   <nav>
 <h2 class="book-brand">
-  <a href="/"><img src="/logo.jpg" alt="Logo" /><span>multi-dimentional</span>
+  <a href="/"><span>My New Hugo Site</span>
   </a>
 </h2>
 
 
 <div class="book-search">
   <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner spinner hidden"></div>
+  <div class="book-search-spinner hidden"></div>
   <ul id="book-search-results"></ul>
 </div>
 
@@ -72,43 +71,55 @@ https://github.com/alex-shpak/hugo-book
 
 
   
-  
-  
-  
-
-  
   <ul>
     
       
         <li>
           
   
-    <a href="/docs/profile/" class="">소개 Introduction</a>
+  
+
+  
+    <a href="http://example.org/docs/profile/" class="">소개 Introduction</a>
   
 
         </li>
       
     
       
-        <li>
+        <li class="book-section-flat" >
           
-  
-    <a href="/docs/develope/" class="collapsed ">개발 기록 Developer Note</a>
-  
-
-          
-  
   
   
 
   
+    <a href="http://example.org/docs/example/" class="">Example Site</a>
+  
+
+          
   <ul>
     
       
         <li>
           
   
-    <a href="/docs/develope/210101/" class="">도서 검색 api - 네이버, kakao (&#43;파이썬에서 xml 파싱)</a>
+  
+
+  
+    <a href="http://example.org/docs/example/table-of-contents/" class="">Table of Contents</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/example/table-of-contents/with-toc/" class="">With ToC</a>
   
 
         </li>
@@ -118,234 +129,16 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/develope/200907_google_apps_script_project_booklist/" class="">Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</a>
   
 
-        </li>
-      
-    
-      
-        <li>
-          
   
-    <a href="/docs/develope/200824/" class="">hugo 블로그 구글 서치 콘솔 등록</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200823/" class="">hugo 블로그 구축할때 레포가 2개 필요한 이유</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200814/" class="">구글 app script 에서 installable trigger 활성화하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200812/" class="">구글 스프레드 시트 &#43; app script 이용해서 독서 리스트 관리하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200726/" class="">LG그램에 리눅스 20.04 설치하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200723_b/" class="active">인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200723/" class="">hugo 명령어 정리, git 배쉬에서 .md파일 바로 실행하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200618/" class="">추천 시스템 만들기 building a recommendation system 0</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200604/" class="">google cloud function을 이용한 크롤러 2</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200525/" class="">google cloud function을 이용한 크롤러</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/200505/" class="">파이썬 &#43; requests &#43; beautifulsoup 를 구글 클라우드 펑션에 구현하기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/gcf1/" class="">구글 클라우드 펑션</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/insertimg/" class="">Insertimg</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/hugo-blog/" class="">휴고 블로그 구축과정</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/yuppppp/" class="">Fiiinally</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/blogframework/" class="">블로그 프레임웤 정함</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="">xpath 사용해서 엘리먼트 찾기</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/" class="">마이프로틴 웹크롤러</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/aint-easy/" class="">aint easy</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/building-a-web-crawler/" class="">building a web crawler</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/finally/" class="">can a github blog substitute a paper note?</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-    <a href="/docs/develope/haha/" class="">haha</a>
+    <a href="http://example.org/docs/example/table-of-contents/without-toc/" class="">Without ToC</a>
   
 
         </li>
       
     
   </ul>
-  
 
         </li>
       
@@ -354,38 +147,661 @@ https://github.com/alex-shpak/hugo-book
         <li>
           
   
-    <a href="/docs/book/" class="collapsed ">독후감 Book Review</a>
+  
+
+  
+    <input type="checkbox" id="section-4e46b01272d410b3a99461d79326ddf4" class="toggle"  />
+    <label for="section-4e46b01272d410b3a99461d79326ddf4" class="flex justify-between">
+      <a  class="">Collapsed</a>
+      <span>▾</span>
+    </label>
   
 
           
-  
-  
-  
-
-  
-
-        </li>
-      
+  <ul>
     
       
         <li>
           
   
-    <a href="/docs/paper/" class="collapsed ">아무논문 Paper Review</a>
+  
+
+  
+    <a href="http://example.org/docs/example/collapsed/3rd-level/" class="">3rd Level</a>
   
 
           
-  
+  <ul>
+    
+      
+        <li>
+          
   
   
 
+  
+    <a href="http://example.org/docs/example/collapsed/3rd-level/4th-level/" class="">4th Level</a>
   
 
         </li>
       
     
   </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
   
+  
+
+  
+    <input type="checkbox" id="section-388f0674165f455e649a117fac61ed59" class="toggle" checked />
+    <label for="section-388f0674165f455e649a117fac61ed59" class="flex justify-between">
+      <a href="http://example.org/docs/develope/" class="">개발 기록 Developer Note</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/210101/" class="">도서 검색 api - 네이버, kakao (&#43;파이썬에서 xml 파싱)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200907_google_apps_script_project_booklist/" class="">Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200824/" class="">hugo 블로그 구글 서치 콘솔 등록</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200823/" class="">hugo 블로그 구축할때 레포가 2개 필요한 이유</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200814/" class="">구글 app script 에서 installable trigger 활성화하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200812/" class="">구글 스프레드 시트 &#43; app script 이용해서 독서 리스트 관리하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200726/" class="">LG그램에 리눅스 20.04 설치하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200723_b/" class=" active">인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200723/" class="">hugo 명령어 정리, git 배쉬에서 .md파일 바로 실행하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200618/" class="">추천 시스템 만들기 building a recommendation system 0</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200604/" class="">google cloud function을 이용한 크롤러 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200525/" class="">google cloud function을 이용한 크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/200505/" class="">파이썬 &#43; requests &#43; beautifulsoup 를 구글 클라우드 펑션에 구현하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/gcf1/" class="">구글 클라우드 펑션</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/insertimg/" class="">Insertimg</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/hugo-blog/" class="">휴고 블로그 구축과정</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/yuppppp/" class="">Fiiinally</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/blogframework/" class="">블로그 프레임웤 정함</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="">xpath 사용해서 엘리먼트 찾기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/" class="">마이프로틴 웹크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/aint-easy/" class="">aint easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/building-a-web-crawler/" class="">building a web crawler</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/finally/" class="">can a github blog substitute a paper note?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/develope/haha/" class="">haha</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-83590b6e494da998b8219aa943ea1ac4" class="toggle"  />
+    <label for="section-83590b6e494da998b8219aa943ea1ac4" class="flex justify-between">
+      <a href="http://example.org/docs/paper/" class="">아무논문 Paper Review</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/paper/201004/" class="">The Role of Deliberate Practice in the Acquisition of Expert Performance</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/paper/0608/" class="">[Psychology] Happiness is a stochastic phenomenon</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-63e23d2e5f707c103ab775fdc029ff83" class="toggle"  />
+    <label for="section-63e23d2e5f707c103ab775fdc029ff83" class="flex justify-between">
+      <a href="http://example.org/docs/book/" class="">독후감 Book Review</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/book/200829/" class="">김지은입니다</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/book/200812/" class="">오리지널스 - 애덤 그랜트</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <span>Shortcodes</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/buttons/" class="">Buttons</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/columns/" class="">Columns</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/details/" class="">Details</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/expand/" class="">Expand</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/hints/" class="">Hints</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/katex/" class="">Katex</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/mermaid/" class="">Mermaid</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="toggle"  />
+    <label for="section-d3fc1bf6d66cd84b896a0af9f40cb1d5" class="flex justify-between">
+      <a href="http://example.org/docs/shortcodes/section/" class="">Section</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/section/page1/" class="">Page1</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/section/page2/" class="">Page2</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="http://example.org/docs/shortcodes/tabs/" class="">Tabs</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
 
 
 
@@ -401,8 +817,8 @@ https://github.com/alex-shpak/hugo-book
 <ul>
   
   <li>
-    <a href="" target="_blank" rel="noopener">
-        
+    <a href="/posts/" >
+        Blog
       </a>
   </li>
   
@@ -418,10 +834,11 @@ https://github.com/alex-shpak/hugo-book
 
 
 
-  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
 
 
  
+      </div>
     </aside>
 
     <div class="book-page">
@@ -433,33 +850,46 @@ https://github.com/alex-shpak/hugo-book
   </label>
 
   <strong>인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</strong>
+
   <label for="toc-control">
+    
     <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
   </label>
 </div>
 
+
   
-    <input type="checkbox" class="hidden" id="toc-control" />
-    <aside class="hidden clearfix">
-      
+  <aside class="hidden clearfix">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
 
-    </aside>
+
+  </aside>
   
  
       </header>
 
       
       
-  <article class="markdown">
-    <h2>인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</h2>
-    <h4 style="float:inline-end">Thursday, 07/23/2020, 09:27PM</h4>
-    <hr style="border: solid 1px #848484"><p>이것도 맨날 헷갈리는 개념</p>
-<br/>
-<p>출처: 
-  <a href="https://medium.com/@chrisjune_13837/%ec%9d%b8%ec%bd%94%eb%94%a9%ea%b3%bc-%eb%94%94%ec%bd%94%eb%94%a9-87006cf8dee2">https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2</a></p>
- <br/>
-<h4 id="인코딩-문자열을-바이트로-변환">인코딩: <strong>문자열</strong>을 <strong>바이트</strong>로 변환</h4>
+  <article class="markdown"><p>이것도 맨날 헷갈리는 개념</p>
+<!-- raw HTML omitted -->
+<p>출처: <a href="https://medium.com/@chrisjune_13837/%ec%9d%b8%ec%bd%94%eb%94%a9%ea%b3%bc-%eb%94%94%ec%bd%94%eb%94%a9-87006cf8dee2">https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2</a></p>
+<!-- raw HTML omitted -->
+<h4 id="인코딩-문자열을-바이트로-변환">
+  인코딩: <strong>문자열</strong>을 <strong>바이트</strong>로 변환
+  <a class="anchor" href="#%ec%9d%b8%ec%bd%94%eb%94%a9-%eb%ac%b8%ec%9e%90%ec%97%b4%ec%9d%84-%eb%b0%94%ec%9d%b4%ed%8a%b8%eb%a1%9c-%eb%b3%80%ed%99%98">#</a>
+</h4>
 <ul>
 <li>
 <p>바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐</p>
@@ -468,11 +898,20 @@ https://github.com/alex-shpak/hugo-book
 <p>파이썬은 문자열을 유니코드로 처리 ㅇㅇ</p>
 </li>
 </ul>
-<h5 id="nbspnbspnbsp-즉-파이썬에서-인코딩이란-유니코드----utf-8-euc-kr-ascii">    즉 파이썬에서 인코딩이란, 유니코드 &ndash;&gt; utf-8, euc-kr, ascii</h5>
-<br/>
-<h4 id="디코딩은-그-반대-바이트를-문자열로-변환">디코딩은 그 반대: <strong>바이트</strong>를 <strong>문자열</strong>로 변환</h4>
-<h5 id="nbspnbspnbspnbsputf-8-euc-kr-ascii----유니코드">    utf-8, euc-kr, ascii &ndash;&gt; 유니코드</h5>
-<br/> 
+<h5 id="nbspnbspnbsp-즉-파이썬에서-인코딩이란-유니코드----utf-8-euc-kr-ascii">
+      즉 파이썬에서 인코딩이란, 유니코드 &ndash;&gt; utf-8, euc-kr, ascii
+  <a class="anchor" href="#nbspnbspnbsp-%ec%a6%89-%ed%8c%8c%ec%9d%b4%ec%8d%ac%ec%97%90%ec%84%9c-%ec%9d%b8%ec%bd%94%eb%94%a9%ec%9d%b4%eb%9e%80-%ec%9c%a0%eb%8b%88%ec%bd%94%eb%93%9c----utf-8-euc-kr-ascii">#</a>
+</h5>
+<!-- raw HTML omitted -->
+<h4 id="디코딩은-그-반대-바이트를-문자열로-변환">
+  디코딩은 그 반대: <strong>바이트</strong>를 <strong>문자열</strong>로 변환
+  <a class="anchor" href="#%eb%94%94%ec%bd%94%eb%94%a9%ec%9d%80-%ea%b7%b8-%eb%b0%98%eb%8c%80-%eb%b0%94%ec%9d%b4%ed%8a%b8%eb%a5%bc-%eb%ac%b8%ec%9e%90%ec%97%b4%eb%a1%9c-%eb%b3%80%ed%99%98">#</a>
+</h4>
+<h5 id="nbspnbspnbspnbsputf-8-euc-kr-ascii----유니코드">
+      utf-8, euc-kr, ascii &ndash;&gt; 유니코드
+  <a class="anchor" href="#nbspnbspnbspnbsputf-8-euc-kr-ascii----%ec%9c%a0%eb%8b%88%ec%bd%94%eb%93%9c">#</a>
+</h5>
+<!-- raw HTML omitted -->
 <p>인스타그램 oembed가 리턴해주는건 json데이터인데, 이걸 모르고</p>
 <p>받아온 바이트데이터를 utf-8로 인코딩 euc로 인코딩해보고 인코딩한거에서 \\u0000 없애보고 난리부르스를,,,</p>
 <p>json은 그냥 json encoding을 바로 해주면 되더라. 걍 json 모듈에 맡기면 됨</p>
@@ -485,7 +924,7 @@ json11 = json.loads(text)
 
       <footer class="book-footer">
         
-  <div class="flex justify-between">
+  <div class="flex flex-wrap justify-between">
 
 
 
@@ -510,9 +949,22 @@ json11 = json.loads(text)
 
     
     <aside class="book-toc">
-      
+      <div class="book-toc-content">
+        
+  
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
  
+      </div>
     </aside>
     
   </main>
@@ -521,6 +973,7 @@ json11 = json.loads(text)
 </body>
 
 </html>
+
 
 
 

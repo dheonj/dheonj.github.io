@@ -1,33 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>아무논문 Paper Review on multi-dimentional</title>
-    <link>https://dheonj.github.io/docs/paper/</link>
-    <description>Recent content in 아무논문 Paper Review on multi-dimentional</description>
+    <title>아무논문 Paper Review on My New Hugo Site</title>
+    <link>http://example.org/docs/paper/</link>
+    <description>Recent content in 아무논문 Paper Review on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
-    
-	<atom:link href="https://dheonj.github.io/docs/paper/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language>
+    <lastBuildDate>Sun, 04 Oct 2020 20:39:08 +0900</lastBuildDate><atom:link href="http://example.org/docs/paper/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Role of Deliberate Practice in the Acquisition of Expert Performance</title>
-      <link>https://dheonj.github.io/docs/paper/201004/</link>
+      <link>http://example.org/docs/paper/201004/</link>
       <pubDate>Sun, 04 Oct 2020 20:39:08 +0900</pubDate>
       
-      <guid>https://dheonj.github.io/docs/paper/201004/</guid>
-      <description>The Role of Deliberate Practice in the Acquisition of Expert Performance</description>
+      <guid>http://example.org/docs/paper/201004/</guid>
+      <description>The Role of Deliberate Practice in the Acquisition of Expert Performance
+ 번역하면
+전문 기량 습득에서 deliberate practice의 역할
+정도 되겠다.
+ deliberate practice는 &amp;lsquo;의도적/의식적인/신중한 연습&amp;rsquo;정도로 번역되는 듯.
+논문은 여기나
+https://psycnet.apa.org/record/1993-40718-001
+or 여기에서 볼 수 있음
+https://graphics8.nytimes.com/images/blogs/freakonomics/pdf/DeliberatePractice(PsychologicalReview).pdf
+관심있는 주제의 페이퍼라 읽으려고봤더니 무려 40p라서, 이너넷의 누군가는 요약을 해줬을 것이라 믿고 찾아봤다. 다음은 요약문 원문 주소
+http://www.jimdavies.org/summaries/ericsson1993.html
+https://blog.vivekhaldar.com/post/3881908748/tldr-summary-the-role-of-deliberate-practice-in
+  분야막론 세계 정상급 퍼포먼스를 낳는 요소를 찾는 것이 연구의 목표.
+  저자는 talent view를 부정.</description>
     </item>
     
     <item>
       <title>[Psychology] Happiness is a stochastic phenomenon</title>
-      <link>https://dheonj.github.io/docs/paper/0608/</link>
+      <link>http://example.org/docs/paper/0608/</link>
       <pubDate>Mon, 08 Jun 2020 22:48:22 +0900</pubDate>
       
-      <guid>https://dheonj.github.io/docs/paper/0608/</guid>
+      <guid>http://example.org/docs/paper/0608/</guid>
       <description>http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.395.1181&amp;amp;rep=rep1&amp;amp;type=pdf
 행복은 확률적인 현상이다.
 ​
-일란성 쌍둥이와 이란성 쌍둥이의 주관적인 행복도를 (이쪽에서는 SWB라고 표현하는 듯.</description>
+일란성 쌍둥이와 이란성 쌍둥이의 주관적인 행복도를 (이쪽에서는 SWB라고 표현하는 듯. abbreviation of subjective well-being) 시간간격을 두고 설문한 결과
+heritability of the stable component of subjective well-being approaches 80%.
+​
+BTW one of people who uploaded this paper tried to cross out a sentence in conclusion like
+ It may be that trying to be happier is as futile as trying to be taller and therefore is counterproductive.</description>
     </item>
     
   </channel>
