@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>독후감 Book Review on multi-dimentional</title>
+    <link>https://dheonj.github.io/docs/book/</link>
+    <description>Recent content in 독후감 Book Review on multi-dimentional</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://dheonj.github.io/docs/book/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>김지은입니다</title>
+      <link>https://dheonj.github.io/docs/book/200829/</link>
+      <pubDate>Sat, 29 Aug 2020 20:05:29 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/book/200829/</guid>
+      <description>잠깨고싶을때 읽으면 좋은 책
+시발아저씨는 쪽팔린거라도 알지,, 상고까지 꾸역꾸역했네.
+나도 한남이니 여기까지하고 걍 닥쳐야,, 성폭행 피해자의 삶은 이렇게 망가지는구나.</description>
+    </item>
+    
+    <item>
+      <title>오리지널스 - 애덤 그랜트</title>
+      <link>https://dheonj.github.io/docs/book/200812/</link>
+      <pubDate>Wed, 12 Aug 2020 22:19:34 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/book/200812/</guid>
+      <description>헤어스타일이 인상적인 애덤 그랜트의 오리지널스.
+상식과 반하는 부분이 있어서 재미있게 읽었다.</description>
+    </item>
+    
+  </channel>
+</rss>

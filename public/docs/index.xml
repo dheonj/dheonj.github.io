@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on multi-dimentional</title>
+    <link>https://dheonj.github.io/docs/</link>
+    <description>Recent content in Docs on multi-dimentional</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Jan 2021 23:11:51 +0900</lastBuildDate><atom:link href="https://dheonj.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>소개 Introduction</title>
+      <link>https://dheonj.github.io/docs/profile/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/profile/</guid>
+      <description>This is a blog. Hello. I love this steep slope (not downward :P)</description>
+    </item>
+    
+  </channel>
+</rss>

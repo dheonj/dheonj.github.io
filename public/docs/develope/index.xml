@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>개발 기록 Developer Note on multi-dimentional</title>
+    <link>https://dheonj.github.io/docs/develope/</link>
+    <description>Recent content in 개발 기록 Developer Note on multi-dimentional</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://dheonj.github.io/docs/develope/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>도서 검색 api - 네이버, kakao (&#43;파이썬에서 xml 파싱)</title>
+      <link>https://dheonj.github.io/docs/develope/210101/</link>
+      <pubDate>Fri, 01 Jan 2021 23:11:51 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/210101/</guid>
+      <description>네이버, 카카오 둘 다 도서 검색 api를 제공한다.
+isbn 값을 넣어주면, 책에대한 정보를 서버에 요청하고 받아오는 코드를 작성함.</description>
+    </item>
+    
+    <item>
+      <title>Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</title>
+      <link>https://dheonj.github.io/docs/develope/200907_google_apps_script_project_booklist/</link>
+      <pubDate>Mon, 07 Sep 2020 01:32:38 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200907_google_apps_script_project_booklist/</guid>
+      <description>https://dheonj.github.io/docs/develope/200812/
+여기에서 대충 얘기한 독서리스트 얘기 이어서..
+구글 스프레드시트로 만든 독서 리스트 관리 프로그램 lite 버전.</description>
+    </item>
+    
+    <item>
+      <title>hugo 블로그 구글 서치 콘솔 등록</title>
+      <link>https://dheonj.github.io/docs/develope/200824/</link>
+      <pubDate>Mon, 24 Aug 2020 22:44:48 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200824/</guid>
+      <description>깃헙 블로그에 막 신나게 글을 썼는데 검색에 노출이 안되면 은근히 섭섭하다.</description>
+    </item>
+    
+    <item>
+      <title>hugo 블로그 구축할때 레포가 2개 필요한 이유</title>
+      <link>https://dheonj.github.io/docs/develope/200823/</link>
+      <pubDate>Sun, 23 Aug 2020 16:19:41 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200823/</guid>
+      <description>휴고 블로그 구축할때 깃헙 레포가 2개 필요하다.
+하나는 블로그의 모든 소스가 들어가있는 폴더고 (hugo/blog)</description>
+    </item>
+    
+    <item>
+      <title>구글 app script 에서 installable trigger 활성화하기</title>
+      <link>https://dheonj.github.io/docs/develope/200814/</link>
+      <pubDate>Fri, 14 Aug 2020 00:31:34 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200814/</guid>
+      <description>구글 app script에서 기본으로 제공하는 심플 트리거는 몇가지가 있다.
+(https://developers.google.com/apps-script/guides/triggers 참조)</description>
+    </item>
+    
+    <item>
+      <title>구글 스프레드 시트 &#43; app script 이용해서 독서 리스트 관리하기</title>
+      <link>https://dheonj.github.io/docs/develope/200812/</link>
+      <pubDate>Wed, 12 Aug 2020 22:56:32 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200812/</guid>
+      <description>이것은 장기 프로젝트인 거시다.
+구글 드라이브를 저장공간으로도 많이 썼지만, 스크립트를 작성해서 캘린더 일정을 스프레드시트와 연동하는 것도 만들어보고, 학과 근로 업무할때도 사용했다.</description>
+    </item>
+    
+    <item>
+      <title>LG그램에 리눅스 20.04 설치하기</title>
+      <link>https://dheonj.github.io/docs/develope/200726/</link>
+      <pubDate>Sun, 26 Jul 2020 18:28:08 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200726/</guid>
+      <description>2021.1.2 업뎃
+다 필요없고 WSL2 (Windows Subsystem for Linux 2) 설치 후 그 환경에서 ROS 깔고 이용하는게 최고!</description>
+    </item>
+    
+    <item>
+      <title>인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</title>
+      <link>https://dheonj.github.io/docs/develope/200723_b/</link>
+      <pubDate>Thu, 23 Jul 2020 21:27:59 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200723_b/</guid>
+      <description>이것도 맨날 헷갈리는 개념
+출처: https://medium.com/@chrisjune_13837/%EC%9D%B8%EC%BD%94%EB%94%A9%EA%B3%BC-%EB%94%94%EC%BD%94%EB%94%A9-87006cf8dee2
+인코딩: 문자열을 바이트로 변환   바이트 코드는 utf-8, euc-kr, ascii 등의 형식을 가짐</description>
+    </item>
+    
+    <item>
+      <title>hugo 명령어 정리, git 배쉬에서 .md파일 바로 실행하기</title>
+      <link>https://dheonj.github.io/docs/develope/200723/</link>
+      <pubDate>Thu, 23 Jul 2020 21:07:19 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200723/</guid>
+      <description>맨날 까먹어서 ㅇㅇㅇ
+자주쓰는거만 정리
+$ hugo server -D$ hugo new docs/develope/200723.</description>
+    </item>
+    
+    <item>
+      <title>추천 시스템 만들기 building a recommendation system 0</title>
+      <link>https://dheonj.github.io/docs/develope/200618/</link>
+      <pubDate>Thu, 18 Jun 2020 00:02:14 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200618/</guid>
+      <description>sns 타임라인 피드 추천 시스템을 구현해보려고 한다.
+신문기사등 다른 url을 퍼온 포스팅을 대상으로 한다.</description>
+    </item>
+    
+    <item>
+      <title>google cloud function을 이용한 크롤러 2</title>
+      <link>https://dheonj.github.io/docs/develope/200604/</link>
+      <pubDate>Thu, 04 Jun 2020 19:18:18 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200604/</guid>
+      <description>이전글
+ 파이썬 + request + beautifulsoup를 구글 클라우드 펑션에 구현하기</description>
+    </item>
+    
+    <item>
+      <title>google cloud function을 이용한 크롤러</title>
+      <link>https://dheonj.github.io/docs/develope/200525/</link>
+      <pubDate>Mon, 25 May 2020 23:04:38 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200525/</guid>
+      <description>이전 글
+https://jdh-earthling.github.io/docs/developernote/200505/
+ 함수서버 url을 server.com/function 이라고 했을때
+클라이언트가 server.</description>
+    </item>
+    
+    <item>
+      <title>파이썬 &#43; requests &#43; beautifulsoup 를 구글 클라우드 펑션에 구현하기</title>
+      <link>https://dheonj.github.io/docs/develope/200505/</link>
+      <pubDate>Tue, 05 May 2020 22:13:59 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/200505/</guid>
+      <description>Google cloud function을 사용해서, 크롤링 서버를 하나 만들었음.
+함수서버 url을 server.</description>
+    </item>
+    
+    <item>
+      <title>구글 클라우드 펑션</title>
+      <link>https://dheonj.github.io/docs/develope/gcf1/</link>
+      <pubDate>Mon, 04 May 2020 15:52:41 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/gcf1/</guid>
+      <description>구글 클라우드 펑션을 사용중.
+친구랑 뭘 좀 만들어보려고하는데, 내 진도가 느리다.</description>
+    </item>
+    
+    <item>
+      <title>Insertimg</title>
+      <link>https://dheonj.github.io/docs/develope/insertimg/</link>
+      <pubDate>Tue, 28 Apr 2020 21:47:51 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/insertimg/</guid>
+      <description>휴고 포스트에 이미지 넣기.
+매우 쉬웠음.
+static 폴더 안에 있는 이미지들은 그대로 올라감.</description>
+    </item>
+    
+    <item>
+      <title>휴고 블로그 구축과정</title>
+      <link>https://dheonj.github.io/docs/develope/hugo-blog/</link>
+      <pubDate>Mon, 27 Apr 2020 21:37:12 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/hugo-blog/</guid>
+      <description>블로그 프레임웍 정하기
+맨처음에는 깃헙 블로그 검색하면 한글로 가장 많이 나오는 지킬로 기본 테마만 만들고 수정할 수 없어서 몇번 만들어놓기만 하고 포기&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Fiiinally</title>
+      <link>https://dheonj.github.io/docs/develope/yuppppp/</link>
+      <pubDate>Mon, 27 Apr 2020 21:13:13 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/yuppppp/</guid>
+      <description>드디어 블로그 뼈대 완성쓰 했다
+Finally I finished building my blog structure using hugo :P</description>
+    </item>
+    
+    <item>
+      <title>블로그 프레임웤 정함</title>
+      <link>https://dheonj.github.io/docs/develope/blogframework/</link>
+      <pubDate>Wed, 22 Apr 2020 23:39:36 +0900</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/blogframework/</guid>
+      <description>마침내 깃헙블로그 프레임웤을 정했음.
+지킬 &amp;ndash;&amp;gt; 헥소 &amp;ndash;&amp;gt; 휴고
+앞에 두 개는 하나도 이해할 수 없어서 너무나 막막했기에 더 쉬운 사용성을 가진 플랫폼을 찾아다녔다</description>
+    </item>
+    
+    <item>
+      <title>xpath 사용해서 엘리먼트 찾기</title>
+      <link>https://dheonj.github.io/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/</link>
+      <pubDate>Tue, 31 Mar 2020 23:38:45 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/</guid>
+      <description>xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림. 엘리먼트가 로드되면 esc 누름.</description>
+    </item>
+    
+    <item>
+      <title>마이프로틴 웹크롤러</title>
+      <link>https://dheonj.github.io/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/</link>
+      <pubDate>Mon, 30 Mar 2020 23:44:41 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/</guid>
+      <description>파이썬+셀레늄을 이용해 마이프로틴 웹사이트 크롤러를 만드는 중
+이전에도 크롤링 프로그램을 만들어본 적이 있으나 언제나 배보다 배꼽이 더 큰 느낌 LMAO&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>aint easy</title>
+      <link>https://dheonj.github.io/docs/develope/aint-easy/</link>
+      <pubDate>Sun, 22 Mar 2020 22:19:36 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/aint-easy/</guid>
+      <description>building an web crawler to gather nutritional information of every products on myprotein</description>
+    </item>
+    
+    <item>
+      <title>building a web crawler</title>
+      <link>https://dheonj.github.io/docs/develope/building-a-web-crawler/</link>
+      <pubDate>Thu, 19 Mar 2020 23:12:54 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/building-a-web-crawler/</guid>
+      <description>파이썬으로 마이프로틴 홈페이지를 긁어서, 제품 DB를 만들고
+내가 현재 먹고있는 영양제들을 체크하면</description>
+    </item>
+    
+    <item>
+      <title>can a github blog substitute a paper note?</title>
+      <link>https://dheonj.github.io/docs/develope/finally/</link>
+      <pubDate>Mon, 09 Mar 2020 21:31:31 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/finally/</guid>
+      <description>from what jekyll? to hexo finally.
+much easier to use for newbs just like me lol</description>
+    </item>
+    
+    <item>
+      <title>haha</title>
+      <link>https://dheonj.github.io/docs/develope/haha/</link>
+      <pubDate>Sun, 08 Mar 2020 16:40:31 +0000</pubDate>
+      
+      <guid>https://dheonj.github.io/docs/develope/haha/</guid>
+      <description>test</description>
+    </item>
+    
+  </channel>
+</rss>
