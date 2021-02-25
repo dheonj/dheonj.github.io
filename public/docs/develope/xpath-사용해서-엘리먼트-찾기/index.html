@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림. 엘리먼트가 로드되면 esc 누름."><meta property="og:title" content="xpath 사용해서 엘리먼트 찾기" />
+<meta property="og:description" content="xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림. 엘리먼트가 로드되면 esc 누름." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://dheonj.github.io/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2020-03-31T23:38:45&#43;00:00" />
+<meta property="article:modified_time" content="2020-03-31T23:38:45&#43;00:00" />
+
+<title>xpath 사용해서 엘리먼트 찾기 | multi-dimentional</title>
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.86e1c16414f60c448c56dc73b2e4b87bc0fb1a5d85b9a68b1dd31c681d640979.css" integrity="sha256-huHBZBT2DESMVtxzsuS4e8D7Gl2FuaaLHdMcaB1kCXk=">
+<script defer src="/en.search.min.f9f464cff48e74e981aeaa820af0052f7aa2b62042444988f1de0271032a4143.js" integrity="sha256-&#43;fRkz/SOdOmBrqqCCvAFL3qitiBCREmI8d4CcQMqQUM="></script>
+
+<script defer src="/sw.min.6f6f90fcb8eb1c49ec389838e6b801d0de19430b8e516902f8d75c3c8bd98739.js" integrity="sha256-b2&#43;Q/LjrHEnsOJg45rgB0N4ZQwuOUWkC&#43;NdcPIvZhzk="></script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-168756004-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><img src="/logo.jpg" alt="Logo" /><span>multi-dimentional</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/profile/" class="">소개 Introduction</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/" class="collapsed ">개발 기록 Developer Note</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/210101/" class="">도서 검색 api - 네이버, kakao (&#43;파이썬에서 xml 파싱)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200907_google_apps_script_project_booklist/" class="">Booklist using spreadsheet(&#43;Google Apps Script), 구글 스크립트로 작성한 북리스트 자동 관리 프로그램</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200824/" class="">hugo 블로그 구글 서치 콘솔 등록</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200823/" class="">hugo 블로그 구축할때 레포가 2개 필요한 이유</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200814/" class="">구글 app script 에서 installable trigger 활성화하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200812/" class="">구글 스프레드 시트 &#43; app script 이용해서 독서 리스트 관리하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200726/" class="">LG그램에 리눅스 20.04 설치하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200723_b/" class="">인코딩, 디코딩 정리. 인스타그램 oembed 데이터 디코딩하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200723/" class="">hugo 명령어 정리, git 배쉬에서 .md파일 바로 실행하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200618/" class="">추천 시스템 만들기 building a recommendation system 0</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200604/" class="">google cloud function을 이용한 크롤러 2</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200525/" class="">google cloud function을 이용한 크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/200505/" class="">파이썬 &#43; requests &#43; beautifulsoup 를 구글 클라우드 펑션에 구현하기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/gcf1/" class="">구글 클라우드 펑션</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/insertimg/" class="">Insertimg</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/hugo-blog/" class="">휴고 블로그 구축과정</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/yuppppp/" class="">Fiiinally</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/blogframework/" class="">블로그 프레임웤 정함</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/xpath-%EC%82%AC%EC%9A%A9%ED%95%B4%EC%84%9C-%EC%97%98%EB%A6%AC%EB%A8%BC%ED%8A%B8-%EC%B0%BE%EA%B8%B0/" class="active">xpath 사용해서 엘리먼트 찾기</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/%EB%A7%88%EC%9D%B4%ED%94%84%EB%A1%9C%ED%8B%B4-%EC%9B%B9%ED%81%AC%EB%A1%A4%EB%9F%AC/" class="">마이프로틴 웹크롤러</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/aint-easy/" class="">aint easy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/building-a-web-crawler/" class="">building a web crawler</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/finally/" class="">can a github blog substitute a paper note?</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/develope/haha/" class="">haha</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/book/" class="collapsed ">독후감 Book Review</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/docs/paper/" class="collapsed ">아무논문 Paper Review</a>
+  
+
+          
+  
+  
+  
+
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="" target="_blank" rel="noopener">
+        
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>xpath 사용해서 엘리먼트 찾기</strong>
+  <label for="toc-control">
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown">
+    <h2>xpath 사용해서 엘리먼트 찾기</h2>
+    <h4 style="float:inline-end">Tuesday, 03/31/2020, 11:38PM</h4>
+    <hr style="border: solid 1px #848484"><ol>
+<li>xpath에 엘리먼트가 로딩(?) 될 때 까지 5초 기다림.
+엘리먼트가 로드되면 esc 누름. 외국서버에 있는 홈페이진데 굳이 모든 요소가 로딩될때까지 기다릴 필요는 없으니 ㅇㅇ</li>
+</ol>
+<pre><code>WebDriverWait(driver, 5).until(
+EC.presence_of_element_located((By.XPATH , &quot;&quot;&quot; // *[@id=&quot;mainContent&quot;]/div/div[1]/main/div[1]/div[1]/p &quot;&quot;&quot;))
+)
+ActionChains(driver).send_keys(Keys.ESCAPE).perform()
+</code></pre><ol start="2">
+<li>지정한 위치(xpath)에 있는 요소를 찾음. 그리고 걔를 num_of_results라는 변수로 저장.</li>
+</ol>
+<pre><code>num_of_results= driver.find_element_by_xpath(&quot;&quot;&quot; //*[@id=&quot;mainContent&quot;]/div/div[1]/main/div[1]/div[1]/p &quot;&quot;&quot;)
+</code></pre><ol start="3">
+<li>2번과 같이 xpath로 엘리먼트를 찾아서 info라고 정의.</li>
+</ol>
+<pre><code>info = driver.find_element_by_xpath(&quot;&quot;&quot;//*[@id=&quot;product-description-content-8&quot;]/div/div&quot;&quot;&quot;)
+</code></pre><ol start="4">
+<li>info라는 엘리먼트 내부(.)에서 p태그를 가진 요소&rsquo;들&rsquo;을 모두 찾음(//p). elements이기 때문에 serving_info는 리스트임. ㅇㅇ.</li>
+</ol>
+<pre><code>serving_info=info.find_elements_by_xpath(&quot;.//p&quot;)
+</code></pre><ol start="5">
+<li>info라는 엘리먼트 내부의 테이블을 모두 찾는데(.//table) 그 테이블이 td의 child일 경우에는 제외([not(ancestor::td)])</li>
+</ol>
+<pre><code>nutritional_info=info.find_elements_by_xpath(&quot;&quot;&quot;.//table[not(ancestor::td)]&quot;&quot;&quot;)
+</code></pre><ol start="6">
+<li>table이라는 엘리먼트 내부의 td태그를 가진 요소들을 모두 찾는데, 그 td가 table을 child로 가지는 경우에는 제외 ([not(child::table)])</li>
+</ol>
+<pre><code>nut_info_text = table.find_elements_by_xpath(&quot;&quot;&quot;.//td[not(child::table)]&quot;&quot;&quot;)
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
