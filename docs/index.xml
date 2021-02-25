@@ -1,26 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Docs on My New Hugo Site</title>
-    <link>http://example.org/docs/</link>
-    <description>Recent content in Docs on My New Hugo Site</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 01 Jan 2021 23:11:51 +0900</lastBuildDate><atom:link href="http://example.org/docs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>소개 Introduction</title>
-      <link>http://example.org/docs/profile/</link>
-      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
-      
-      <guid>http://example.org/docs/profile/</guid>
-      <description>This is a blog.#I love this steep slope (not downward :P)
-Thank you.
-Framework: Hugo
-Original Theme: Book
-​	Hugo
-​	Github Page | Hugo Page
-</description>
-    </item>
-    
-  </channel>
-</rss>
